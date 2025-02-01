@@ -12,5 +12,4 @@ Graphical User Interface (GUI) built with Tkinter
 
 AI Learns from Past Games (Q-table-based learning)
 
-Different Difficulty Levels (Coming Soon)
 
