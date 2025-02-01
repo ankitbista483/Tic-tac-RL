@@ -4,7 +4,6 @@ A simple Tic-Tac-Toe game implemented in Python using Tkinter for the GUI and Q-
 
 🚀 Features
 
-Human vs. Human Mode
 
 Human vs. AI Mode (AI uses Q-learning)
 
