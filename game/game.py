@@ -19,13 +19,13 @@ class TicTacToe:
     def make_move(self,row,col,player):
         # Helps to make a move if there is empty position
         if self.board[row,col] == 0:
-            self.board[row,col] == player
+            self.board[row,col] = player
             return True
         return False
     
     def available_moves(self):
         # Returns a list of empty position
-        return [(r,c) for r in range(3) for c in range(3) is self.board == 0]
+        return [(r,c) for r in range(3) for c in range(3) if self.board[r, c] == 0]
     
     def check_winner(self):
         # Checks for the winner or for a draw
@@ -48,3 +48,10 @@ class TicTacToe:
             return 0
         
         return None
+    
+
+
+
+
+
+

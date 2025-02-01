@@ -1,6 +1,7 @@
 import os
 import pickle
 
+
 def ensure_directory(directory="models"):
     """Ensures that the given directory exists."""
     os.makedirs(directory, exist_ok=True)
@@ -22,3 +23,5 @@ def load_q_table(load_path="models/q_table.pkl"):
     else:
         print("No trained Q-table found!")
         return None
+
+

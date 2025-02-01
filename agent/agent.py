@@ -16,14 +16,16 @@ class QLearningAgent:
     
     def choose_action(self,available_moves,state):
         if random.uniform(0,1) < self.epsilon:
-            return random.choice[available_moves]
+            return random.choice(available_moves)
         else:
             q_values = [self.get_q_values(state, move) for move in available_moves]
             max_q = max(q_values)
             return available_moves[q_values.index(max_q)]
         
-    def udpate_q_values(self,state,action,reward, next_state, next_available_move):
+    def update_q_values(self,state,action,reward, next_state, next_available_move):
         max_q_values = max([self.get_q_values(next_state,a) for a in next_available_move],default=0)
         current_q_state = self.get_q_values(state,action)
-        new_q = current_q_state + self.alpha(reward + self.gamma * max_q_values -current_q_state)
+        new_q = current_q_state + self.alpha*(reward + self.gamma * max_q_values -current_q_state)
         self.q_table[(state,action)] = new_q
+
+
