@@ -34,9 +34,9 @@ pip install -r requirements.txt
 ▶️ Usage
 
 Run the game with:
-
+```sh
 python main.py
-
+```
 🎮 How to Play
 
 Run the script using python main.py.
