@@ -5,7 +5,7 @@ from agent.agent import QLearningAgent
 from game.game import TicTacToe
 from utils.utils import save_q_table
 
-def train_agent(episode=100000, save_path="models/q_table.pkl"):
+def train_agent(episode=150000, save_path="models/q_table.pkl"):
     agent = QLearningAgent()
     
     for _ in range(episode):
