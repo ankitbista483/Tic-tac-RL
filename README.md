@@ -37,6 +37,10 @@ Run the game with:
 ```sh
 python main.py
 ```
+Run the game with Tkinter:
+```sh
+python play_game_gui.py
+```
 🎮 How to Play
 
 Run the script using python main.py.
